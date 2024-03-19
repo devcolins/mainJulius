@@ -15,13 +15,13 @@ function Shop() {
   const products = useQueryWithAuth(api.myFunctions.getProducts, {});
  
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-2 gap-4 rounded-lg min-h-screen">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-2 gap-2 rounded-lg min-h-screen">
       {products?.products.map((product) => (
         <Link href={`/pages/product/${product._id}`} key={product._id}>
           <Card className="cursor-pointer">
             <div className="grid aspect-card group overflow-hidden rounded-lg w-full">
               <div className="relative  overflow-hidden rounded-t-lg">
-                <Image
+                <img
                   alt="Product image"
                   className="aspect-card object-cover w-full transition-transform"
                   height={100}
