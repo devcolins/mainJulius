@@ -21,7 +21,7 @@ function Shop() {
           <Card className="cursor-pointer">
             <div className="grid aspect-card group overflow-hidden rounded-lg w-full">
               <div className="relative  overflow-hidden rounded-t-lg">
-                <Image
+                <img
                   alt="Product image"
                   className="aspect-card object-cover w-full transition-transform"
                   height={100}
