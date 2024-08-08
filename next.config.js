@@ -3,10 +3,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "https://energized-dalmatian-74.convex.cloud",
-      },
-      {
-        hostname: "https://images.unsplash.com",
+        hostname: "**",
       },
     ],
   },
